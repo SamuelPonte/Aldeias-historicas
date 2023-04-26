@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linhares da Beira</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="MainPage.css">
+    <link rel="stylesheet" href="OtherPage.css">
+</head>
+
+<body>
+    <header class="container-fluid">
+        <!-- Titulo -->
+        <div class="row">
+            <span class="Title">Aldeias</span>
+        </div>
+    </header>
+
+    <nav class="container-fluid navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <div class="container-fluid">
+            <!-- Logo e Nome -->
+            <a class="navbar-brand" href="#">
+                <img src="castle.svg" height="40px">
+                <span class="navbar-text">Castelo</span>
+            </a>
+            <!-- Buttão quando encolhe -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Contexto da nav -->
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link navbar-brand" href="MainPage.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            Aldeias históricas
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="Almeida.html">Almeida</a>
+                            <a class="dropdown-item" href="CasteloRodrigo.html">Castelo Rodrigo</a>
+                            <a class="dropdown-item" href="LinharesBeira.html">Linhares da Beira</a>
+                            <a class="dropdown-item" href="Marialva.html">Marialva</a>
+                            <a class="dropdown-item" href="Monsanto.html">Monsanto</a>
+                        </div>
+                    </li>
+                </ul>
+                <!-- Login e Registo -->
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <button type="button" class="btn Rite" data-bs-toggle="modal" data-bs-target="#ModalLogin">
+                            Login
+                        </button>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-black" href="Registo.html">Registo</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <h2 class="pt-3 ">Linhares da Beira</h2>
+                <p>
+                    Aldeia medieval do século XII, Linhares da Beira possui uma diversidade arquitetónica e
+                    artística ímpar, fruto do legado de várias épocas. Em 1169, recebeu o seu primeiro foral,
+                    atribuído por D. Afonso Henriques. Mas só mais tarde, no reinado de D. Dinis, foi erigido o seu
+                    imponente Castelo, ex-líbris da aldeia e principal cartão de visita nos nossos dias. Deambular
+                    pelas ruas desta aldeia museu é fazer uma incursão ao passado, à sua história, e sentir a brisa
+                    do Vale do Mondego a acariciar-nos o rosto.
+                </p>
+                <div class="mt-2 mb-3">
+                    <iframe width="100%" height="480" class="mb-3" src="https://www.youtube.com/embed/iEKUxZmndD4"
+                        title="LINHARES DA BEIRA | Aldeias Históricas de  PORTUGAL" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+
+            <div class="clearfix pt-3" style="background-color: rgb(255,251,247);">
+                <h4 class="mb-2 text-secondary fw-bold">História</h4>
+                <!-- Carousels -->
+                <div id="carouselExampleInterval2" class="carousel slide me-sm-3 mb-sm-2 col-sm-6 float-sm-start "
+                    data-bs-ride="carousel" style="max-width: 700px;">
+                    <!-- Indicadores embaixo da caption -->
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleInterval2" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1">
+                        </button>
+                        <button type="button" data-bs-target="#carouselExampleInterval2" data-bs-slide-to="1"
+                            aria-label="Slide 2">
+                        </button>
+                        <button type="button" data-bs-target="#carouselExampleInterval2" data-bs-slide-to="2"
+                            aria-label="Slide 3">
+                        </button>
+                    </div>
+                    <!-- Imagens -->
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="5000">
+                            <img src="linhares da beira_imagens\linhares2.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="3000">
+                            <img src="linhares da beira_imagens\linhares5.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="3000">
+                            <img src="linhares da beira_imagens\linhares1.jpg" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <!-- Botão para trás -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval2"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <!-- Botão para frente -->
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval2"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+                <p class="mb-3">
+                    Vila de fundação medieval, com foral concedido em 1169 por D. Afonso Henriques, que, em 1855 perde
+                    este estatuto com a reforma administrativa liberal. Apesar do local ter conhecido a fixação de povos
+                    pré-romanos e existir registo escrito da passagem de romanos, visigodos e muçulmanos, a história de
+                    Linhares, tem origem no contexto gerado com a reconquista Cristã. Estabilizadas as fronteiras do
+                    reino português, Linhares continuou a ter significado estratégico pelo menos até ao século XVII,
+                    pois fazia parte do sistema defensivo que guardava a Bacia do Mondego, na retaguarda das
+                    fortificações da raia beirã.
+
+                    A estrutura de ocupação do espaço da antiga vila de Linhares conjuga assim um tipo característico de
+                    povoamento medieval (séculos XII-XIV), com desenvolvimentos significativos no período quinhentista
+                    (século XVI). Nesta centúria a vila terá atingido uma configuração próxima da atual, ainda que no
+                    património edificado pesem, pelo impacto no tecido urbano, algumas construções mais tardias (séculos
+                    XVII-XIX).
+
+                    O castelo, implantado num cabeço rochoso a cerca de 820 m de altitude e dominando o Vale do Mondego,
+                    constitui o núcleo gerador do aglomerado. Na encosta, sobranceira à várzea de Linhares e cruzada por
+                    antiga via romana, estendeu-se a povoação: o sistema fortificado, entregue a um alcaide e dispondo
+                    de pequena guarnição militar, defendia um território bem como a sua população e bens; o foral,
+                    concedido pelo Rei, prescrevia a autonomia concelhia e organizava a vida económica e social do
+                    povoado; a Igreja estabeleceu as paróquias.
+
+                    A vila descreve, no sopé do Castelo, um perímetro triangular, em cujos vértices se situam três
+                    espaços ordenadores da malha urbana: o Lg. da Misericórdia, à entrada da povoação; o Lg. de S.
+                    Pedro, na zona denominada “Cimo da Vila”; e o Lg. da Igreja, próximo do Castelo e no acesso ao Campo
+                    da Corredoura, terreno de usufruto comum. Estes largos definiram-se em torno de igrejas – hoje
+                    desaparecida a de S. Pedro – e constituíam o centro das paróquias de fundação medieval. Na base do
+                    triângulo e no ponto oposto à Matriz, localiza-se o Lg. do Pelourinho, outrora o centro cívico da
+                    Vila.
+
+                    Da assistência ao peregrino, pobres e doentes sobra-nos o edifício do Lg. da Misericórdia, que
+                    acolheu duas instituições típicas da sociedade medieval e moderna – a Albergaria e o Hospital.
+                    Também do abastecimento de água, temos para observar três fontes dos séculos XII, XVI e XIX. Além da
+                    casa tradicional e popular disseminada por toda a vila, contam-se as casas nobres dos séculos
+                    XVIII-XIX, destacando-se janelas e portas decoradas ao gosto Manuelino (século XVI), quase sempre
+                    moradias de proprietários agrícolas mais abastados ou da burguesia local ligada ao comércio. Entre
+                    estes encontrava-se a comunidade judaica, minoria étnica e religiosa obrigada a viver apartada da
+                    comunidade cristã e cujo bairro – judiaria – se situava numa transversal à Rua Direita: sobre a
+                    porta de acesso ao bairro (Arco) figura uma das mais elaboradas janelas manuelinas de Linhares.
+                </p>
+            </div>
+
+            <div class="mt-3 col-sm-12">
+                <h4 class="mb-2 text-secondary fw-bold">Mapa</h4>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12188.53077561387!2d-7.463385937380476!3d40.53831992475398!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd3cddf7e83aa405%3A0x23771a61a073a8af!2sLinhares%20da%20beira!5e1!3m2!1spt-PT!2spt!4v1673758840796!5m2!1spt-PT!2spt"
+                    width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+
+            <div class="mt-3 pt-3 row" style="background-color: rgb(255,251,247);">
+                <h4 class="mb-2 text-secondary fw-bold">O que ver</h4>
+
+                <div class=" col-xl-4">
+                    <div class="card mb-3">
+                        <a href="Antiga Hospedaria.html" class="lazer" target="_blank">
+                            <img src="Photos_edit\Antiga Hospedaria.jpg"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Antiga Hospedaria</h5>
+                                <p class="card-text">
+                                    Esta albergaria, depois hospital da Misericórdia, é um marco importante para a
+                                    compreensão...
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class=" col-xl-4">
+                    <div class="card mb-3">
+                        <a href="Fonte De Mergulho e Fórum.html" class="lazer" target="_blank">
+                            <img src="Photos_edit\Fonte De Mergulho e Fórum.jpg"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Fonte De Mergulho e Fórum</h5>
+                                <p class="card-text">
+                                    Construção em pedra, que exibe as armas do município, era o local de reunião da
+                                    assembleia...
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class=" col-xl-4">
+                    <div class="card mb-3">
+                        <a href="Fonte Barbosa.html" class="lazer" target="_blank">
+                            <img src="Photos_edit\Fonte Barbosa.jpg"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Fonte Barbosa</h5>
+                                <p class="card-text">
+                                    Fonte de mergulho ou de chafurdo, com planta quadrangular, formando volume cúbico.
+                                    A...
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="mt-3 pt-3 row">
+                <h4 class="mb-2 text-secondary fw-bold">Onde dormir</h4>
+
+                <div class=" col-xl-4">
+                    <div class="card mb-3">
+                        <a href="Casas Do Durão.html" class="lazer" target="_blank">
+                            <img src="Photos_edit\Casas Do Durão.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Casas Do Durão</h5>
+                                <p class="card-text">
+                                    Estamos localizados na aldeia de Lajeosa do Mondego, com uma situação geográfica...
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-3 pt-3 mb-5 row" style="background-color: rgb(255,251,247);">
+                <h4 class="mb-2 text-secondary fw-bold">O que fazer</h4>
+
+                <div class=" col-xl-4">
+                    <div class="card mb-3">
+                        <a href="Viagens de aventura e natureza.html" class="lazer" target="_blank">
+                            <img src="Photos_edit\Viagens de aventura e natureza.jpg"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Viagens de aventura e natureza</h5>
+                                <p class="card-text">
+                                    A Dream Overland é uma empresa de animação turística legalmente registada,
+                                    especializada...
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+
+                <div class=" col-xl-4">
+                    <div class="card mb-3">
+                        <a href="Try Portugal.html" class="lazer" target="_blank">
+                            <img src="Photos_edit\Try Portugal_aventura, natureza and cultura.jpg"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Try Portugal</h5>
+                                <p class="card-text">
+                                    A TRY PORTUGAL promove programas e experiências personalizadas de turismo ativo...
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class=" col-xl-4">
+                    <div class="card mb-3">
+                        <a href="Just Go.html" class="lazer" target="_blank">
+                            <img src="Photos_edit\Just Go_actividades de animação turística.jpg"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">JUST GO</h5>
+                                <p class="card-text">
+                                    A JUST GO é uma Empresa de Animação especializada em atividades turísticas no
+                                    território...
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <footer class="container-fluid pt-4 pb-2">
+        <!-- Icons -->
+        <div class="footer-icons">
+            <a href="https://www.instagram.com/" target="_blank">
+                <i class="fa-brands fa-instagram fa-2x"></i>
+            </a>
+            <a href="https://twitter.com/?lang=pt" target="_blank">
+                <i class="fa-brands fa-twitter fa-2x"></i>
+            </a>
+            <a href="https://www.tiktok.com/" target="_blank">
+                <i class="fa-brands fa-tiktok fa-2x"></i>
+            </a>
+            <a href="https://pt.linkedin.com/" target="_blank">
+                <i class="fa-brands fa-linkedin fa-2x"></i>
+            </a>
+            <a href="https://github.com/" target="_blank">
+                <i class="fa-brands fa-github fa-2x"></i>
+            </a>
+        </div>
+
+        <div class="footer-text">
+            <!-- My name -->
+            <h5>Samuel Ponte</h5>
+        </div>
+    </footer>
+
+    <!-- Button to go to the top -->
+    <div class="fa-3x">
+        <a href="#Top" class="GoTop"><i class="fa-solid fa-arrow-up fa-bounce"></i></a>
+    </div>
+
+    <!-- Script -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <!-- Modal Login -->
+    <div class="modal fade" id="ModalLogin" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Login</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Username <input type="text" name="#" width="200px" height="200 px">
+                    <br>
+                    <br>
+                    Password <input type="password" name="#" width="200px" height="200 px">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

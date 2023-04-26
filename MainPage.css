@@ -1,0 +1,67 @@
+body {
+    font-family: 'Roboto Mono', sans-serif;
+
+}
+
+header {
+    background-color: black;
+    color: white;
+    font-size: 4em;
+}
+
+span.Title {
+    padding-left: 30px;
+    padding-top: 30px;
+}
+
+.navbar {
+    padding-left: 10px;
+}
+
+.navbar-text {
+    padding-left: 10px;
+}
+
+.Rite {
+    --bs-btn-padding-x: 0rem;
+    padding-right: 10px;
+}
+
+footer {
+    background-color: rgb(184, 184, 184);
+    text-align: center;
+}
+
+.footer-icons a {
+    color: #333;
+    text-decoration: none;
+    margin-right: 0.5rem;
+}
+
+.footer-icons a:hover {
+    color: #6cc0e5;
+}
+
+.footer-text h5 {
+    margin: 0;
+    margin-top: 4px;
+}
+
+.GoTop {
+    position: fixed;
+    bottom: 3px;
+    right: 50px;
+    color: #333;
+    z-index: 1;
+    padding: 10px 1px 5px 1px;
+}
+
+.GoTop:hover {
+    color: #6cc0e5;
+}
+
+@media (min-width: 400px) {
+    .d-md-block {
+        display: block !important;
+    }
+}
